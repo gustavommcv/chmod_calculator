@@ -1,3 +1,4 @@
+import { inputsSync } from "./util/inputsSync.js";
 import { matrixHTMLSyncPos } from "./util/matrixHTMLSync.js";
 
 // This matrix stores the current state of the table
@@ -38,5 +39,6 @@ export function updateMatrix(userType, permissionType) {
   }
   
   matrixHTMLSyncPos(userType, permissionType, symbol);
+  inputsSync();
   // console.log(matrix);
 }

@@ -2,7 +2,7 @@ import { matrix, updateMatrix } from "../matrix-context.js";
 
 const inputs = document.querySelectorAll(".inputs-section__input");
 
-// Syncs all fields of the matrix, and the event listeners for the inputs
+// Syncs all fields of the matrix to the HTML table, and creates the event listeners for the inputs
 export function matrixHTMLSyncAll() {
   inputs.forEach((input) => {
     input.addEventListener("click", (event) => {
