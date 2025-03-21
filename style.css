@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --color-primary: rgb(83, 83, 83);
+  --color-secondary: rgb(235, 235, 235);
+  --color-active: green;
+  --color-hover: lightblue;
+  --border-color: black;
+  --border-radius: 10px;
+  --padding-default: 1rem 2rem;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xlg: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80rem;
+  padding: 3rem;
+
+  margin-bottom: var(--spacing-lg);
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  font-size: 1.5rem;
+}
+
+.button--active {
+  background-color: var(--color-active);
+}
+
+.button--header {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.main {
+  width: 100%;
+  max-width: 60rem;
+}
+
+.inputs-section__table {
+  width: 100%;
+  /* I really don't know why, but it works */
+  max-width: 1rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: var(--spacing-lg);
+}
+
+.inputs-section__table th,
+.inputs-section__table td {
+  border: 1px solid var(--border-color);
+  padding: var(--padding-default);
+}
+
+.inputs-section__table th {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.inputs-section__table tr:first-child th:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+.inputs-section__table tr:first-child th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
+.inputs-section__table tr:last-child td:first-child {
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.inputs-section__table tr:last-child td:last-child {
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.inputs-section__input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.inputs-section__input:hover {
+  background-color: var(--color-hover);
+}
+
+.permissions-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-weight: normal;
+}
+
+.permissions-section div {
+  margin-bottom: var(--spacing-md);
+}
+
+.permissions-section__title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: var(--spacing-sm);
+}
+
+.permissions-section__subtitle {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: var(--spacing-md);
+}
+
+.permissions-section__input {
+  padding: 1rem 2rem;
+}
+
+.permissions-section__command {
+  font-size: 1.5rem;
+}
