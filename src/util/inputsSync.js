@@ -22,7 +22,7 @@ export function inputsSync() {
   // Only changes the default value if the str contains something different
   if (str === "----------") {
     symbolicInput.value = "";
-    symbolicSpan.innerHTML = "-rw-rw-rw-";
+    symbolicSpan.innerHTML = "u=rwx";
   } else {
     symbolicInput.value = str;
     symbolicSpan.innerHTML = printSymblicCommand(str);
