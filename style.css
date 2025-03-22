@@ -125,6 +125,7 @@ body {
   height: 100%;
   cursor: pointer;
   background-color: transparent;
+  font-size: 2rem;
 }
 
 .inputs-section__input:hover {
@@ -162,6 +163,14 @@ body {
 
 .permissions-section__input {
   padding: 1rem 2rem;
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 20rem;
+  text-align: center;
+}
+
+#symbolic {
+  letter-spacing: 2px;
 }
 
 .permissions-section__command {

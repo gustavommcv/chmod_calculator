@@ -164,14 +164,21 @@
       <section class="permissions-section">
         <div class="permissions-section__display">
           <h2 class="permissions-section__title">Linux permissions</h2>
-          <input id="numeric" class="permissions-section__input" type="text" placeholder="777" />
-          <input id="symbolic" class="permissions-section__input" type="text" placeholder="-rw-rw-rw-" />
+          <input id="numeric" class="permissions-section__input" type="text" placeholder="755" disabled />
+          <input id="symbolic" class="permissions-section__input" type="text" placeholder="-rw-rw-rw-" disabled />
         </div>
         <p class="permissions-section__usage">
-            <p class="permissions-section__subtitle">You can use both symbolic and numeric format:</p>
-            <p class="permissions-section__command">chmod 777 sample-file.txt</p>
-            <p class="permissions-section__command">chmod o+rwx sample-file.txt</p>
-        </p>
+          <p class="permissions-section__subtitle">
+              You can use both symbolic and numeric formats to set file permissions. Here are some examples:
+          </p>
+          <p class="permissions-section__command">
+              <code>chmod <span id="numeric-span"></span> sample-file.txt</code>
+          </p>
+          <p class="permissions-section__command">
+              <code>chmod <span id="symbolic-span"></span> sample-file.txt</code>
+          </p>
+      </p>
+
       </section>
     </main>
 

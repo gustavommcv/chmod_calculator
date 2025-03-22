@@ -13,6 +13,7 @@ export default function binaryParse(permissionString) {
 }
 
 function permissionToNumeric(str) {
+  // Transform the str (rwx) into binary (111)
   const binaryString = str
     .split("")
     .map((char) => {
@@ -25,6 +26,6 @@ function permissionToNumeric(str) {
     })
     .join("");
 
-  // Binary to decimall
+  // Binary to decimal
   return parseInt(binaryString, 2);
 }
