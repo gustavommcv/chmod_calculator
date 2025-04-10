@@ -34,5 +34,4 @@ export function updateMatrixField(user, permission) {
   }
 
   updateGUI(user, permission, symbol);
-  // console.log(matrix);
 }
