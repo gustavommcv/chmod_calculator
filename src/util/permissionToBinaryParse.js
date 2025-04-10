@@ -1,4 +1,4 @@
-export default function binaryParse(permissionString) {
+export default function permissionToBinaryParse(permissionString) {
   const str = permissionString.slice(1);
 
   const userPermission = str.slice(0, 3);

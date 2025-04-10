@@ -1,3 +1,3 @@
-import loadEventListeners from "./loadEventListeners.js";
+import setupMatrixClickHandlers from "./matrix/setupChmodMatrixClickHandlers.js";
 
-loadEventListeners();
+setupMatrixClickHandlers();
